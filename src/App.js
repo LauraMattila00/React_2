@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './App.css';
 
 const API_URL = 'https://api.spoonacular.com/recipes/search?'
-const API_KEY = 'bd8ca746cc524104b0e35cc10ede52a7'
+const API_KEY = ''
 const IMG_URL = 'https://spoonacular.com/recipeImages/'
 
 function App() {
@@ -33,11 +33,9 @@ function App() {
           setUrl('Go to recipe: ' + response.data.results[randomNumber].sourceUrl)
         }
       }).catch(error => {
-          alert('Try something else!')
-        })
+        alert('Try something else!')
+      })
   }
-
-
 
   return (
     <div style={{ margin: '50px' }}>
